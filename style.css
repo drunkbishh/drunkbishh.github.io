@@ -55,12 +55,15 @@ text-align: center;
         .block1-1{
         margin-top: 2%;
         text-align:center;
+        
       
         }
         .block1-1 h1{
             font-size: 0.9cm;
             text-align:center;
-            padding:4%
+            padding:4%;
+            background-image: url(yay.PNG);
+            background-size: 90%;
             
         }
         .block1-1 h3{
