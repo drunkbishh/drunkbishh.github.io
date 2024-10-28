@@ -188,7 +188,9 @@ color:#fff4ea;
  <h4>Chess players: 7 seconds ; Non-chess players: 11 seconds </h4>
  <h2>Maximum Value</h2>
  <h4>Chess players: 16 seconds; Non-chess players: 26 seconds</h4>
- <h2>Interquarile Range (IQR)</h2>
+    
+    <h2>Interquarile Range (IQR)</h2>
+    <h3> Chess players</h3>
  <h4>7, 12, 15, 16</h4>
 
   <h4>  Q1 (First Quartile): This is the median of the lower half (7, 12). The median between these two is:
@@ -209,6 +211,7 @@ color:#fff4ea;
     </h4>
     <h2>Outliers</h2>
 <p>
+    
     Lower Bound:Lower Bound=Q1−1.5×IQR=9.5−(1.5×6.0)=9.5−9=0.5
     <br></br>
 Upper Bound:Upper Bound=Q3+1.5×IQR=15.5+(1.5×6.0)=15.5+9=24.5
@@ -218,6 +221,39 @@ Identifying Outliers: Any data point below the lower bound (0.5 seconds) or abov
 Conclusion:
 Since all the data points (7, 12, 15, and 16 seconds) fall within the range of 0.5 to 24.5 seconds, there are no outliers in this dataset.
 </p>
+
+<h2>Interquarile Range (IQR)</h2>
+<h3> Non-Chess players</h3>
+<h4>11, 14, 16, 26</h4>
+
+<h4>  Q1 (First Quartile): This is the median of the lower half (11, 14). The median between these two is:
+
+𝑄1 =( 11 + 14)/ 2 = 12.5</h4>
+<h4> Q3 (Third Quartile): This is the median of the upper half (16, 26). The median between these two is:
+
+𝑄3  = ( 16  +  26) / 2  = 21 </h4>
+<h4> Calculating the IQR
+IQR= 𝑄3−𝑄1=21−12.5= 8.5
+</h4>
+
+<h4>
+
+Conclusion:
+The Interquartile Range (IQR) is 8.5 seconds, indicating that the middle 50% of the participants' times are spread out over 8.5 seconds.
+
+</h4>
+<h2>Outliers</h2>
+<p>
+Lower Bound: Q1−1.5×IQR=12.5−1.5×8.5=12.5−12.75= −0.25
+<br></br>
+Upper Bound:Q3+1.5×IQR=21+1.5×8.5=21+12.75= 33.75
+<br></br>
+Identifying Outliers: Any data point below the lower bound (-0.25 seconds) or above the upper bound (33.75 seconds) would be considered an outlier.
+<br></br>
+Conclusion:
+Since all the data points (11, 14, 16, and 26 seconds) fall within the range of 0.25 to 33.75 seconds, there are no outliers in this dataset.
+</p>
+
 
 
  <h3> The medium maze puzzles</h3>
@@ -238,36 +274,74 @@ Since all the data points (7, 12, 15, and 16 seconds) fall within the range of 0
  <h2>Maximum Value</h2>
  <h4>Chess players: 52 seconds; Non-chess players: 33 seconds</h4>
  <h2>Interquarile Range (IQR)</h2>
- <h4>7, 12, 15, 16</h4>
-
-  <h4>  Q1 (First Quartile): This is the median of the lower half (7, 12). The median between these two is:
-    
-    𝑄1 =( 7 + 12)/ 2 = 9.5</h4>
-    <h4>
-    Q3 (Third Quartile): This is the median of the upper half (15, 16). The median between these two is:
-    
-    𝑄3  = ( 15  +  16) / 2  =  15.5 
-     Calculating the IQR
-    IQR= 𝑄3−𝑄1=15.5−9.5= 6
-    </h4>
-
-    <h4>
-
-    Conclusion:
-    The Interquartile Range (IQR) is 6 seconds, indicating that the middle 50% of the participants' times are spread out over 6 seconds.
-    
+ <h3> Chess players</h3>
+ <h4>36, 43, 47, 52</h4>
+ 
+ <h4>  Q1 (First Quartile): This is the median of the lower half (36, 43). The median between these two is:
+ 
+ 𝑄1 =( 36 + 43)/ 2 = 39.5</h4>
+ <h4> Q3 (Third Quartile): This is the median of the upper half (47, 52). The median between these two is:
+ 
+ 𝑄3  = ( 47  +  52) / 2  = 49.5 </h4>
+ <h4> Calculating the IQR
+ IQR= 𝑄3−𝑄1=49.5−39.5= 10
+ </h4>
+ 
+ <h4>
+ 
+ Conclusion:
+ The Interquartile Range (IQR) is 10 seconds, indicating that the middle 50% of the participants' times are spread out over 10 seconds.
+ 
+ </h4>
     </h4>
     <h2>Outliers</h2>
 <p>
-    Lower Bound:Lower Bound=Q1−1.5×IQR=9.5−(1.5×6.0)=9.5−9=0.5
+    Lower Bound:Lower Bound=Q1−1.5×IQR=39.5−(1.5×10.0)=24.5
     <br></br>
-Upper Bound:Upper Bound=Q3+1.5×IQR=15.5+(1.5×6.0)=15.5+9=24.5
+Upper Bound:Upper Bound=Q3+1.5×IQR=49.5+(1.5×10.0)=64.5
 <br></br>
-Identifying Outliers: Any data point below the lower bound (0.5 seconds) or above the upper bound (24.5 seconds) would be considered an outlier.
+Identifying Outliers: Any data point below the lower bound (24.5 seconds) or above the upper bound (64.5 seconds) would be considered an outlier.
 <br></br>
 Conclusion:
-Since all the data points (7, 12, 15, and 16 seconds) fall within the range of 0.5 to 24.5 seconds, there are no outliers in this dataset.
+Since all the data points (36, 43, 47, and 52 seconds) fall within the range of 24.5 to 64.5, there are no outliers in this dataset.
 </p>
+
+
+<h2>Interquarile Range (IQR)</h2>
+ <h3> Non-Chess players</h3>
+ <h4>14, 20, 22, 33</h4>
+ 
+ <h4>  Q1 (First Quartile): This is the median of the lower half (36, 43). The median between these two is:
+ 
+ 𝑄1 =( 36 + 43)/ 2 = 39.5</h4>
+ <h4> Q3 (Third Quartile): This is the median of the upper half (47, 52). The median between these two is:
+ 
+ 𝑄3  = ( 47  +  52) / 2  = 49.5 </h4>
+ <h4> Calculating the IQR
+ IQR= 𝑄3−𝑄1=49.5−39.5= 10
+ </h4>
+ 
+ <h4>
+ 
+ Conclusion:
+ The Interquartile Range (IQR) is 10 seconds, indicating that the middle 50% of the participants' times are spread out over 10 seconds.
+ 
+ </h4>
+    </h4>
+    <h2>Outliers</h2>
+<p>
+    Lower Bound:Lower Bound=Q1−1.5×IQR=39.5−(1.5×10.0)=24.5
+    <br></br>
+Upper Bound:Upper Bound=Q3+1.5×IQR=49.5+(1.5×10.0)=64.5
+<br></br>
+Identifying Outliers: Any data point below the lower bound (24.5 seconds) or above the upper bound (64.5 seconds) would be considered an outlier.
+<br></br>
+Conclusion:
+Since all the data points (36, 43, 47, and 52 seconds) fall within the range of 24.5 to 4.5 seconds, there are no outliers in this dataset.
+</p>
+
+
+
 
 <h3>The logic grid puzzles</h3>
 <p>The chess players:(44/13)/4 = 0.85 approx accuracy rate
